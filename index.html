@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--"lang" attribute defines the main language of the document. 
+  <html> tag is the root element of the HTML document.-->
+<html lang="en">
+  <!-- <head> tag contains all the metadata for the website -->
+  <head>
+    <!-- Character encoding declaration which enables 4-byte encoding of all characters exists -->
+    <meta charset="UTF-8" />
+    <!-- ensures site responsiveness for all kinds of device widths -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title displayed at the browser tab, every page should have unique title -->
+    <title>GearUp FitZone - Premium Fitness Equipment</title>
+    <link rel="icon" type="image/x-icon" href="/contents/images/favicon.ico" />
+    <!-- link tag includes stylesheets with paths for the website -->
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css"
+    />
+  </head>
+  <!-- <body> tag holds all the visible contents of the website -->
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <div class="container">
+        <h1>GearUp FitZone</h1>
+        <nav>
+          <a href="#equipment">Equipment</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h2>Gear Up for Greatness</h2>
+          <p>Discover premium fitness equipment at unbeatable prices</p>
+          <input type="text" id="search" placeholder="Search equipment..." />
+        </div>
+      </section>
+
+      <section id="equipment" class="equipment-grid">
+        <div class="container">
+          <h3>Featured Equipment</h3>
+          <div class="grid" id="equipment-list">
+            <!-- Equipment cards will be populated by JavaScript -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 GearUp FitZone. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script> -->

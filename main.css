@@ -128,3 +128,102 @@ footer{
     margin-top: auto;
     font-size: x-small;
 }
+
+
+/* Equipment Grid Styling */
+.equipment-grid {
+  display: grid;
+  /* Default for smaller screens (e.g., 2 columns or adjust as needed) */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5em; /* Gap between cards */
+  justify-content: center; /* Center the grid items if there's extra space */
+  padding: 1em; /* Add some padding around the grid */
+  max-width: 1200px; /* Limit the max width of the grid */
+  margin: 2em auto; /* Center the grid on the page */
+}
+
+.equipment-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.equipment-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.equipment-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.equipment-card-name {
+  font-weight: bold;
+  padding: 1em;
+  text-align: center;
+}
+
+/* Modal Styling */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.close-button {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#modal-body h2 {
+    margin-top: 0;
+}
+
+#modal-body img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
+#modal-body .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007BFF;
+    margin-bottom: 1em;
+}

@@ -1,30 +1,21 @@
 <!DOCTYPE html>
-<!--"lang" attribute defines the main language of the document. 
-  <html> tag is the root element of the HTML document.-->
 <html lang="en">
-  <!-- <head> tag contains all the metadata for the website -->
   <head>
-    <!-- Character encoding declaration which enables 4-byte encoding of all characters exists -->
     <meta charset="UTF-8" />
-    <!-- ensures site responsiveness for all kinds of device widths -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- title displayed at the browser tab, every page should have unique title -->
     <title>GearUp FitZone - Premium Fitness Equipment</title>
     <link rel="icon" type="image/x-icon" href="/contents/images/favicon.ico" />
-    <!-- link tag includes stylesheets with paths for the website -->
     <link rel="stylesheet" href="main.css" />
-    <link
-      rel="stylesheet"
-      href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css"
-    />
+    <link rel="stylesheet" href="body.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
   </head>
-  <!-- <body> tag holds all the visible contents of the website -->
   <body>
-    <!-- Created Navbar menu after the learning from youtube tutorial. Link: https://youtu.be/m7YDWNz65iI?si=joQzku8BMrYi2Y3z -->
     <button id="open-sidebar-button" onclick="openSidebar()">
       <svg
         xmlns="/contents/images/menu.svg"
@@ -64,31 +55,21 @@
     <div id="overlay" onclick="closeSidebar()"></div>
 
     <main>
-      <section class="equipment-section">
-        <div class="container">
-          <h2 style="text-align: center">Featured Equipment</h2>
-          <div class="equipment-grid" id="equipment-list">
-            <!-- Equipment cards will be inserted here dynamically -->
-          </div>
-        </div>
-      </section>
+      <h1 style="text-align: center">Our Equipment</h1>
+      <div id="equipment-list" class="equipment-grid"></div>
     </main>
+
+    <div id="equipment-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">×</span>
+        <div id="modal-body"></div>
+      </div>
+    </div>
 
     <footer>
       <div>
-        <p>&copy; 2024 GearUp FitZone. All rights reserved.</p>
+        <p>© 2024 GearUp FitZone. All rights reserved.</p>
       </div>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js" defer></script>
   </body>
 </html>
-
-<!-- <link
-      rel="stylesheet"
-      href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="script.js"></script> -->

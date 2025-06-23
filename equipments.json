@@ -5,7 +5,7 @@
     "category": "Strength",
     "price": 129.99,
     "description": "Compact dumbbells with adjustable weight plates.",
-    "image": "https://via.placeholder.com/300x200?text=Adjustable+Dumbbells",
+    "image": "/contents/assets/PROIRON-Cast-Iron.png",
     "video": "https://www.example.com/videos/adjustable-dumbbells.mp4"
   },
   {
@@ -14,7 +14,7 @@
     "category": "Cardio",
     "price": 799.0,
     "description": "High-end treadmill with incline control and heart rate monitor.",
-    "image": "https://via.placeholder.com/300x200?text=Treadmill+ProX",
+    "image": "/contents/assets/trademill-prox.png",
     "video": "https://www.example.com/videos/treadmill-prox.mp4"
   },
   {
@@ -23,7 +23,7 @@
     "category": "Strength",
     "price": 89.5,
     "description": "6kg, 10kg, and 14kg kettlebells with ergonomic grip.",
-    "image": "https://via.placeholder.com/300x200?text=Kettlebell+Set",
+    "image": "/contents/assets/Kettlebell-Set1.png",
     "video": "https://www.example.com/videos/kettlebell-set.mp4"
   },
   {
@@ -32,7 +32,7 @@
     "category": "Accessories",
     "price": 25.0,
     "description": "Set of 5 color-coded bands for various resistance levels.",
-    "image": "https://via.placeholder.com/300x200?text=Resistance+Bands",
+    "image": "/contents/assets/Resistance-Bands1.png",
     "video": "https://www.example.com/videos/resistance-bands.mp4"
   },
   {
@@ -41,7 +41,7 @@
     "category": "Cardio",
     "price": 349.0,
     "description": "Smooth pedaling indoor bike with digital display.",
-    "image": "https://via.placeholder.com/300x200?text=Stationary+Bike",
+    "image": "/contents/assets/Stationary-Bike1.png",
     "video": "https://www.example.com/videos/stationary-bike.mp4"
   },
   {
@@ -50,7 +50,7 @@
     "category": "Accessories",
     "price": 39.99,
     "description": "Extra thick non-slip mat for yoga and stretching routines.",
-    "image": "https://via.placeholder.com/300x200?text=Yoga+Mat+Pro",
+    "image": "/contents/assets/Yoga-Mat1.png",
     "video": "https://www.example.com/videos/yoga-mat-pro.mp4"
   }
 ]

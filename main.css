@@ -12,7 +12,7 @@ body {
     min-height: 100dvh;
     display: flex;
     flex-direction: column;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: fa 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 /* main body section fixing */
 main{
@@ -120,6 +120,9 @@ nav a:hover{
     nav a{
         width: 100%;
         padding-left: 2.5em;
+    }
+    nav .logo-name {
+        position: relative;
     }
 }
 

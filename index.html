@@ -9,8 +9,12 @@
     <link rel="stylesheet" href="body.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    /> -->
   </head>
   <body>
     <button id="open-sidebar-button" onclick="openSidebar()">
@@ -45,8 +49,15 @@
         </li>
         <li class="logo-name"><a href="#">GearUp FitZone</a></li>
         <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Login</a></li>
+        <li><a href="#about">About</a></li>
+        <li>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search equipment..."
+            style="margin: 20px 0; padding: 10px; width: 100%; max-width: 400px"
+          />
+        </li>
       </ul>
     </nav>
     <div id="overlay" onclick="closeSidebar()"></div>
@@ -63,6 +74,25 @@
       </div>
     </div>
 
+    <div>
+      <article id="about" style="text-align: center">
+        <h2>About GearUp FitZone</h2>
+        <p></br>
+          At GearUp FitZone, we believe that access to quality fitness equipment
+          shouldn’t be a barrier to building strength, boosting endurance, or
+          simply feeling your best. That’s why we’ve created a flexible,
+          user-friendly platform that brings a wide range of training tools
+          right to your fingertips — whether you're setting up a home gym,
+          supplementing your studio, or just exploring new ways to move. Our
+          intuitive interface lets you browse, preview, and reserve everything
+          from dumbbells to treadmills, all with detailed descriptions, multiple
+          images, demo videos, and built-in reservation tracking. We make the
+          process seamless so you can focus on your fitness goals, not
+          logistics. No memberships. No stress. Just powerful equipment — ready
+          when you are.
+        </p>
+      </article>
+    </div>
     <footer>
       <div>
         <p>© 2024 GearUp FitZone. All rights reserved.</p>

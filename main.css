@@ -230,3 +230,39 @@ footer{
     color: #007BFF;
     margin-bottom: 1em;
 }
+
+
+/* Contact Us form design */
+.contact-section {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#contactForm input,
+#contactForm textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+#contactForm button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact-status {
+  margin-top: 15px;
+  font-weight: bold;
+}

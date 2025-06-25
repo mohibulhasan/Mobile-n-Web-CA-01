@@ -50,6 +50,7 @@
         <li class="logo-name"><a href="#">GearUp FitZone</a></li>
         <li><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact US</a></li>
         <li>
           <input
             type="text"
@@ -66,7 +67,7 @@
       <h1 style="text-align: center">Our Equipment</h1>
       <div id="equipment-list" class="equipment-grid"></div>
     </main>
-
+    <!-- From jQuery the main products will be shown -->
     <div id="equipment-modal" class="modal">
       <div class="modal-content">
         <span class="close-button">×</span>
@@ -89,10 +90,21 @@
           images, demo videos, and built-in reservation tracking. We make the
           process seamless so you can focus on your fitness goals, not
           logistics. No memberships. No stress. Just powerful equipment — ready
-          when you are.
+          when you are. </br></br></br>
         </p>
       </article>
     </div>
+    <section id="contact" class="contact-section">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" id="contact-name" placeholder="Your Name" required />
+        <input type="email" id="contact-email" placeholder="Your Email" required />
+        <input type="text" id="contact-subject" placeholder="Subject" />
+        <textarea id="contact-message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div id="contactStatus" class="contact-status"></div>
+    </section>
     <footer>
       <div>
         <p>© 2024 GearUp FitZone. All rights reserved.</p>

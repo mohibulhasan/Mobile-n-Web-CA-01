@@ -1,12 +1,21 @@
 <!DOCTYPE html>
+<!--"lang" attribute defines the main language of the document. 
+  <html> tag is the root element of the HTML document.-->
 <html lang="en">
+  <!-- <head> tag contains all the metadata for the website -->
   <head>
+    <!-- Character encoding declaration which enables 4-byte encoding of all characters exists -->
     <meta charset="UTF-8" />
+    <!-- ensures site responsiveness for all kinds of device widths -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title displayed at the browser tab, every page should have unique title -->
     <title>GearUp FitZone - Premium Fitness Equipment</title>
     <link rel="icon" type="image/x-icon" href="/contents/images/favicon.ico" />
+    <!-- link tag includes stylesheets with paths for the website -->
     <link rel="stylesheet" href="main.css" />
+    <!-- main body customized stylesheet used to work with jQuery codes -->
     <link rel="stylesheet" href="body.css" />
+    <!-- font-awsome is used here to use the special icons, e.g. star, menu bars, and close button -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -17,6 +26,7 @@
     /> -->
   </head>
   <body>
+    <!-- when the display size is less than equal to 700px then navigation bar will collapse and shows a Hambargur symbol.  -->
     <button id="open-sidebar-button" onclick="openSidebar()">
       <svg
         xmlns="/contents/images/menu.svg"
@@ -30,9 +40,11 @@
         />
       </svg>
     </button>
+    <!-- Created Navbar menu after the learning from youtube tutorial. Link: https://youtu.be/m7YDWNz65iI?si=joQzku8BMrYi2Y3z -->
     <nav id="navbar">
       <ul>
         <li>
+          <!-- to close the sidebar menu in the smaller device with a X icon of font-awsome.  -->
           <button id="close-sidebar-button" onclick="closeSidebar()">
             <svg
               xmlns="/contents/images/close.svg"
@@ -61,21 +73,22 @@
         </li>
       </ul>
     </nav>
+    <!-- implemented functions to close the bar by click/tap anywhere on the screen. -->
     <div id="overlay" onclick="closeSidebar()"></div>
 
     <main>
       <h1 style="text-align: center">Our Equipment</h1>
       <div id="equipment-list" class="equipment-grid"></div>
     </main>
-    <!-- From jQuery the main products will be shown -->
+    <!-- From jQuery the main products' card details will be shown -->
     <div id="equipment-modal" class="modal">
       <div class="modal-content">
         <span class="close-button">×</span>
         <div id="modal-body"></div>
       </div>
     </div>
-
-    <div>
+    <!-- About page description, although implemented in the same page but it can be in a seperate dymanic page. -->
+    <div class="about">
       <article id="about" style="text-align: center">
         <h2>About GearUp FitZone</h2>
         <p></br>
@@ -94,6 +107,7 @@
         </p>
       </article>
     </div>
+    <!-- Contact us section used a forms and seperate CSS to style the form  -->
     <section id="contact" class="contact-section">
       <h2>Contact Us</h2>
       <form id="contactForm">
@@ -101,6 +115,7 @@
         <input type="email" id="contact-email" placeholder="Your Email" required />
         <input type="text" id="contact-subject" placeholder="Subject" />
         <textarea id="contact-message" placeholder="Your Message" rows="5" required></textarea>
+        <!-- We can implement onClick() functions here to work with the inputs. -->
         <button type="submit">Send Message</button>
       </form>
       <div id="contactStatus" class="contact-status"></div>
@@ -110,7 +125,9 @@
         <p>© 2024 GearUp FitZone. All rights reserved.</p>
       </div>
     </footer>
+    <!-- jQuery library imported from the official site.  -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- personal JavaScript code  -->
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,9 +1,4 @@
 /*
- * GENERAL STYLES & RESETS
- * This section contains universal styles and resets for the entire website.
- */
-
-/*
  * Box-sizing property ensures that padding and borders are included in the element's total width and height,
  * preventing layout issues. The universal selector (*) applies these properties to all elements.
  */

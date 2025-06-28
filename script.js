@@ -28,12 +28,6 @@ function closeSidebar() {
 // This function generates the HTML for a star rating.
 //
 
-/**
- * Generates HTML for a star rating based on a given value.
- * @param {number} value - The rating value (e.g., 4.5).
- * @param {string} color - The color for the filled stars.
- * @returns {string} - The HTML string for the star rating.
- */
 function renderRating(value, color) {
   let stars = "";
   // Loop through 5 stars to build the rating
@@ -139,8 +133,12 @@ $(document).ready(function () {
     }">
         <button class="next-slide">❯</button>
       </div>
+      <p class="rating"> ${renderRating(
+        selectedEquipment.rating,
+        "#f8e825"
+      )}</p>
       <p class="price">$${selectedEquipment.price.toFixed(2)}</p>
-      <p>${selectedEquipment.description}</p>
+      <p><strong>Description:</strong> ${selectedEquipment.description}</p></br>
       <video width="100%" controls>
         <source src="${selectedEquipment.video}" type="video/mp4">
         Your browser does not support the video tag.
@@ -172,9 +170,7 @@ $(document).ready(function () {
 
     // Attach a click event listener to the "previous" button.
     // `.off("click")` is used to remove any previous handlers to prevent multiple bindings.
-    $(".prev-slide")
-      .off("click")
-      .on("click", function () {
+    $(".prev-slide").off("click").on("click", function () {
         // Decrement the index, wrapping around to the end of the array if it goes below 0
         currentIndex = (currentIndex - 1 + images.length) % images.length;
         // Update the `src` attribute of the image to show the new image
@@ -183,9 +179,7 @@ $(document).ready(function () {
 
     // Attach a click event listener to the "next" button.
     // `.off("click")` is used to remove any previous handlers to prevent multiple bindings.
-    $(".next-slide")
-      .off("click")
-      .on("click", function () {
+    $(".next-slide").off("click").on("click", function () {
         // Increment the index, wrapping around to the beginning of the array if it goes past the end
         currentIndex = (currentIndex + 1) % images.length;
         // Update the `src` attribute of the image to show the new image
@@ -265,7 +259,7 @@ $(document).ready(function () {
   // This section handles the live search functionality.
   //
 
-  // Attach an "input" event listener to the search input field
+  // Attached an "input" event listener to the search input field
   $("#searchInput").on("input", function () {
     // Get the current value of the input and convert it to lowercase for case-insensitive searching
     const query = $(this).val().toLowerCase();
